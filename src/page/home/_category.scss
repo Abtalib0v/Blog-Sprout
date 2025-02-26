@@ -1,0 +1,74 @@
+#category {
+    display: flex;
+    padding: 60px 15px;
+    justify-content: center;
+    background-color: $bg_color;
+
+    .cards {
+        display: flex;
+        max-width: 199px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        flex: 1 0 0;
+
+
+        .cards_text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+
+            .cards_content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                flex: 1 0 0;
+
+                h1 {
+                    color: $default_color;
+                    font-family: $default_font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+
+                p {
+                    color: $gray_color;
+                    font-family: $default_font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+
+            }
+
+            button {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border-radius: 8px;
+                border: 1px solid $bd_color;
+                background: $bg_color;
+
+                /* Shadows/shadow-xs */
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+                i {
+                    width: 20px;
+                    height: 20px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+
+
+    }
+}

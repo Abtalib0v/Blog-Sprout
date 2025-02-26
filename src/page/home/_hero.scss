@@ -1,0 +1,165 @@
+#hero {
+    padding-bottom: 100px;
+    .title {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0px 50px 0px;
+
+        h1 {
+
+            width: 1120px;
+            color: $default_color;
+            text-align: center;
+
+            /* Display xl/Semibold */
+            font-family: $default_font;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 72px;
+            /* 120% */
+            letter-spacing: -1.2px;
+        }
+
+    }
+
+    .content {
+        display: flex;
+        padding: 30px 0;
+        flex-wrap: wrap;
+        gap: 170px;
+
+        .hero_text {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .text {
+                display: flex;
+                flex-direction: column;
+                max-width: 544px;
+                gap: 16px;
+
+                .venture {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                    align-self: stretch;
+
+                    button {
+                        display: flex;
+                        padding: 4px 12px;
+                        border: 1px solid $bd_color;
+                        background-color: $white_color;
+                        border-radius: 50px;
+                        font-family: $default_font;
+                    }
+
+                    h2 {
+                        color: $default_color;
+
+                        /* Display sm/Medium */
+                        font-family: $default_font;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 38px;
+                        /* 126.667% */
+                    }
+                }
+
+                p {
+                    color: $gray_color;
+                    font-family: $default_font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+
+            .about {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .person {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4px;
+
+                    h1 {
+                        color: $default_color;
+
+                        /* Text sm/Medium */
+                        font-family: $default_font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                        /* 142.857% */
+                    }
+                }
+
+                .line {
+                    width: 20px;
+                    height: 1px;
+                    background: $default_color;
+                }
+
+                .calendar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4px;
+
+                    h1 {
+                        color: $default_color;
+
+                        /* Text sm/Medium */
+                        font-family: $default_font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                        /* 142.857% */
+                    }
+                }
+            }
+
+
+
+
+        }
+
+        .hero_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+
+            button {
+                display: flex;
+                padding: 12px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border-radius: 8px;
+                border: 1px solid $bd_color;
+                background-color: $white_color;
+                color: $default_color;
+            }
+        }
+    }
+
+
+
+    .images {
+        img {
+            height: 520px;
+        }
+    }
+
+
+}

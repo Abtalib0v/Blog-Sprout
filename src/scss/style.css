@@ -306,7 +306,7 @@ table {
   color: #0D0D0D;
 }
 #hero .images img {
-  height: 520px;
+  width: 100%;
 }
 
 #category {

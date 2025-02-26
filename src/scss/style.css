@@ -311,8 +311,7 @@ table {
 
 #category {
   display: flex;
-  width: 75%;
-  margin: 60px auto;
+  padding: 60px 15px;
   justify-content: center;
   background-color: #F9F9FB;
 }

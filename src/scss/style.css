@@ -155,18 +155,22 @@ table {
   align-items: center;
   gap: 32px;
 }
-.container nav .nav_center ul li {
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: #F9F9FB;
-}
 .container nav .nav_center ul li a {
   font-family: "Plus Jakarta Sans", serif;
   color: #0D0D0D;
+  padding: 8px 12px;
+  background: #F9F9FB;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
+  border-radius: 8px;
+  background: #F9F9FB;
+  transition: 0.5s ease-in-out;
+}
+.container nav .nav_center ul li a:hover {
+  background-color: #3328BF;
+  color: #FFF;
 }
 .container nav .nav_right {
   display: flex;
@@ -304,6 +308,11 @@ table {
   border: 1px solid #D6D6D6;
   background-color: #FFF;
   color: #0D0D0D;
+  transition: 0.5s ease-in-out;
+}
+#hero .content .hero_btn button:hover {
+  background-color: #3328BF;
+  color: #FFF;
 }
 #hero .images img {
   width: 100%;
@@ -370,4 +379,484 @@ table {
   background: #F9F9FB;
   /* Shadows/shadow-xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  transition: 0.5s ease-in-out;
+}
+#category .cards .cards_text button:hover {
+  background-color: #3328BF;
+  color: #FFF;
+}
+
+#embark_life {
+  padding-bottom: 60px;
+}
+#embark_life .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px 50px 0px;
+}
+#embark_life .title button {
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 500px;
+  border: 1px solid #D6D6D6;
+  background: #FFF;
+  color: #0D0D0D;
+  /* Text sm/Medium */
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+}
+#embark_life .title h1 {
+  max-width: 1120px;
+  color: #0D0D0D;
+  text-align: center;
+  /* Display xl/Semibold */
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
+  /* 120% */
+  letter-spacing: -1.2px;
+}
+#embark_life .images img {
+  width: 100%;
+  border-radius: 10px;
+}
+#embark_life .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 0;
+  gap: 32px;
+}
+#embark_life .content .content_cards {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  align-self: stretch;
+}
+#embark_life .content .content_cards .content_image img {
+  height: 110px;
+}
+#embark_life .content .content_cards .content_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
+#embark_life .content .content_cards .content_text button {
+  display: flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 500px;
+  border: 1px solid #D6D6D6;
+  background: #FFF;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+#embark_life .content .content_cards .content_text h1 {
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#explore .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 50px 0px;
+}
+#explore .title h1 {
+  max-width: 1120px;
+  color: #0D0D0D;
+  text-align: center;
+  /* Display xl/Semibold */
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
+  /* 120% */
+  letter-spacing: -1.2px;
+}
+#explore .explore_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#explore .explore_btn button {
+  display: flex;
+  padding: 8px 20px 8px 8px;
+  border-radius: 50px;
+  border: 1px solid #D6D6D6;
+  background: #F9F9FB;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  align-items: center;
+  gap: 12px;
+}
+#explore .explore_btn button img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+}
+#explore .cards {
+  margin: 40px 0px 50px 0px;
+}
+#explore .explore_image {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+#explore .explore_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#explore .explore_image button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 500px;
+  background: #F9F9FB;
+  border: 0px;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+#explore .explore_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+#explore .explore_text .contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#explore .explore_text .contact .name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#explore .explore_text .contact .name h2 {
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+#explore .explore_text .contact .calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+#explore .explore_text .contact .calendar img {
+  width: 14px;
+  height: 14px;
+}
+#explore .explore_text .contact .calendar h2 {
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+#explore .explore_text h1 {
+  width: 544px;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+#adventure .adventure_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#adventure .adventure_title h1 {
+  width: 853px;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+#adventure .adventure_title button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0);
+  border: 0px;
+}
+#adventure .adventure_title button h2 {
+  color: #808080;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+#adventure .adventure_title button img {
+  width: 20px;
+  height: 20px;
+}
+#adventure .cards {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--Background-Colors-Gray-White-BG, #F9F9FB);
+  overflow: hidden;
+  padding-bottom: 32px;
+}
+#adventure .cards .cards_image img {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background: url(<path-to-image>) lightgray 50%/cover no-repeat;
+}
+#adventure .cards .cards_text {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+#adventure .cards .cards_text button {
+  display: flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  border: 1px solid #D6D6D6;
+  background: #FFF;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+#adventure .cards .cards_text h1 {
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+#adventure .cards .cards_text p {
+  color: #808080;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+#adventure .cards .cards_text .contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#adventure .cards .cards_text .contact .name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#adventure .cards .cards_text .contact .name h2 {
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+#adventure .cards .cards_text .contact .calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+#adventure .cards .cards_text .contact .calendar img {
+  width: 14px;
+  height: 14px;
+}
+#adventure .cards .cards_text .contact .calendar h2 {
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+#adventure .active_cards {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 10px;
+}
+#adventure .active_cards .active_cards_image {
+  position: relative;
+  width: 100%;
+  height: 803px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#adventure .active_cards .active_cards_image .active {
+  display: flex;
+  position: absolute;
+  left: -100px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+#adventure .active_cards .active_cards_image .active_cards_text {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+#adventure .active_cards .active_cards_image .active_cards_text button {
+  display: flex;
+  padding: 2px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  border: 1px solid #D6D6D6;
+  background: #FFF;
+  color: #0D0D0D;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text h1 {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text p {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact .name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact .name img {
+  width: 24px;
+  height: 24px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact .name h2 {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact .calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact .calendar img {
+  width: 14px;
+  height: 14px;
+}
+#adventure .active_cards .active_cards_image .active_cards_text .contact .calendar h2 {
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */
